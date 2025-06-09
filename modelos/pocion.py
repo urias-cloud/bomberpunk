@@ -10,7 +10,7 @@ class Pocion:
         self.explotada = False
 
     def actualizar(self):
-        if not self.explotada and time.time - self.tiempo_inicial >= self.timer:
+        if not self.explotada and time.time() - self.tiempo_inicial >= self.timer:
             self.explotar()
 
     def explotar(self):

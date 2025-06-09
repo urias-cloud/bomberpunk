@@ -4,7 +4,7 @@ class Jugador:
     def __init__(self, x, y):
         self.rect = pygame.Rect(x, y, 32, 32)
         self.color = (0, 0, 255)
-        self.velocidad = 4
+        self.velocidad = 2
         self.pociones = []
 
     def mover(self, teclas):
@@ -21,6 +21,6 @@ class Jugador:
         self.pociones.append(pocion)
 
     def dibujar(self, pantalla):
-        pygame.draw.rect(pantalla, self.color, self.rectangulo)
+        pygame.draw.rect(pantalla, self.color, self.rect)
 
 

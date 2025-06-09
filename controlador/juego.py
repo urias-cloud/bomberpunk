@@ -24,7 +24,7 @@ class Juego:
             self.jugador.mover(keys)
 
             self.screen.fill((20, 20, 20))  # fondo negro cyberpunk
-            self.jugador.draw(self.screen)
+            self.jugador.dibujar(self.screen)
 
             for pocion in self.jugador.pociones:
                 pocion.actualizar()
