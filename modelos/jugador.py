@@ -1,11 +1,17 @@
 import pygame 
-from pocion import Pocion
+from modelos.pocion import Pocion
+
+AZUL = (0, 0, 255)
+VERDE = (0, 255, 0)
+ROJO = (255, 0, 0)
+
 class Jugador:
     def __init__(self, x, y):
+        
         self.rect = pygame.Rect(x, y, 32, 32)
-        self.color = (0, 0, 255)
-        self.velocidad = 2
-        self.pociones = []
+        self.color = AZUL
+        self.velocidad = 2 #esta es la velocidad del jugador
+        self.pociones = [] #este vendria a ser el inventario/mochila donde se guarda la cantidad de bombas
 
     def mover(self, teclas):
         if teclas[pygame.K_LEFT]:

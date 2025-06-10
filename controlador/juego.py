@@ -1,5 +1,5 @@
 import pygame
-from jugador import Jugador
+from modelos.jugador import Jugador
 
 class Juego:
     def __init__(self):
@@ -28,6 +28,7 @@ class Juego:
 
             for pocion in self.jugador.pociones:
                 pocion.actualizar()
+                pocion.dibujar(self.pantalla)
 
             pygame.display.flip()
             self.clock.tick(60)
