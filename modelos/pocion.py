@@ -3,6 +3,7 @@ import time
 
 class Pocion:
     def __init__(self, x, y, timer = 3):
+        """Metodo constructor de una pocion, incluye dibujo, tiempo, radio de explosion, y si exploto o no """
         self.rectangulo = pygame.Rect(x, y, 32, 32) #dibuja el rectangulo
         self.timer = timer #tiempo que tarda en explotar la pocion
         self.tiempo_inicial = time.time() #esto guarda el tiempo en el que se coloco la pocion
