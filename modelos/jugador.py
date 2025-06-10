@@ -12,7 +12,7 @@ class Jugador:
         self.rect = pygame.Rect(x, y, 32, 32)
         self.color = AZUL
         self.velocidad = 2 #esta es la velocidad del jugador
-        self.pociones = [] #este vendria a ser el inventario/mochila donde se guarda la cantidad de pociones
+        self.pociones = [] #este vendria a ser el control de las bombas, ya que en el futuro queremos agregar un boost para poder poner mas bombas a la vez
 
     def mover(self, teclas):
         """Metodo para que el jugador se pueda mover"""
@@ -25,7 +25,7 @@ class Jugador:
         if teclas[pygame.K_DOWN]:
             self.rect.y += self.velocidad
     def colocar_pocion(self):
-        """Metodo que coloca una pocion y que la suma al inventario"""
+        """Metodo que coloca una pocion"""
         pocion = Pocion(self.rect.x, self.rect.y)
         self.pociones.append(pocion)
 
