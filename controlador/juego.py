@@ -1,3 +1,5 @@
+#no prestarle atencion a este archivo
+"""
 import pygame
 from modelo.jugador import Jugador
 from vista.jugador_vista import JugadorVista
@@ -41,3 +43,4 @@ class Juego:
     def actualizar(self):
         for pocion in self.jugador.pociones:
             pocion.actualizar()
+"""
