@@ -89,7 +89,7 @@ class Controlador:
                     self.enemigo_logico.recibir_danio(bomba.calcular_danio())
 
                     # Destruir paredes si son destruibles
-                for pared in self.modelo_mapa.obtener_paredes_activas():
+                for pared in self.modelo_grafico.modelo_mapa.obtener_paredes_activas():
                     rect_pared = pygame.Rect(pared.pos_x, pared.pos_y, self.tamano_celda, self.tamano_celda)
                     if explosion.colliderect(rect_pared):
                         pared.destruir()
