@@ -15,15 +15,6 @@ from Vista.MapaGrafico import MapaGrafico
 
 
 from Controlador.Controlador import Controlador
-#IMPORTANTE
-#La idea es seguir trabajando en este juego como un proyecto personal y ver hasta donde llega
-#Queremos presentarlo en septiembre, por lo tanto esta version va a seguir siendo actualizada hasta ese momento para mejorarlo lo mas que podamos
-#Le agregamos un mapa de fondo y le cambiamos la bomba
-#METAS A FUTURO:
-#Mejorar las fisicas para que el personaje puede desplazarle de una forma fluida sin chocarse tanto
-#Que la bomba explote en direcciones(arriba,abajo,izq y der) y que tenga animacion.Agregar mas tipos de bombas  
-# Agregar mas enemigos
-# Cambiar el personaje y mejorar su animacion ya que el que esta no es uno oficial.
 
 
 TAMANO_CELDA = 40 #El valor puesto aca puede ser cambiado a 30 para obtener la experiencia que fue presentada en la ultima clase
