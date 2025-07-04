@@ -17,19 +17,20 @@ Este proyecto sigue una arquitectura **MVC (Modelo - Vista - Controlador)** bien
 ## 🚀 Instalación y ejecución
 
 ```bash
+'### 1. Clona e instala el repositorio'
 git clone https://github.com/tuusuario/bomberpunk.git
 cd bomberpunk
-'### 3. Instala el entorno virtual'
+'### 2. Instala el entorno virtual'
 python -m venv venv
-'### 4. Activalo'
+'### 3. Activalo'
 venv\Scripts\activate #windows
 source venv/bin/activate #linux
-'### 5. Instala las dependencias'
+'### 4. Instala las dependencias'
 pip install -r requirements.txt
-'### 6. Corre el juego'
+'### 5. Corre el juego'
 python main.py
 
-'### 7. El proyecto contiene test realizados a la parte logica, podes ejecutarlos con el siguiente comando'
+'### 6. El proyecto contiene test realizados a la parte logica, podes ejecutarlos con el siguiente comando'
 python -m unittest discover tests
 
 ## 👨‍💻 Desarrolladores
