@@ -16,12 +16,9 @@ Este proyecto sigue una arquitectura **MVC (Modelo - Vista - Controlador)** bien
 
 ## 🚀 Instalación y ejecución
 
-### 1. Cloná el repositorio
-
 ```bash
 git clone https://github.com/tuusuario/bomberpunk.git
 cd bomberpunk
-
 '### 3. Instala el entorno virtual'
 python -m venv venv
 '### 4. Activalo'
