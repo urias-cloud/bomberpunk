@@ -1,0 +1,21 @@
+import unittest
+from Modelos.Bomba import Bomba
+
+class TestBomba(unittest.TestCase):
+    """Pruebas unitarias para la clase Bomba (tipo normal)."""
+
+    def setUp(self):
+        """Configura una bomba de tipo normal , con tiempo de colocada de 1000ms"""
+        self.bomba = Bomba(100, 100, "normal", 1000)
+
+    def test_danio_tipo_normal(self):
+        """Verifica que una bomba de tipo normal haga 30 de daño."""
+        self.assertEqual(self.bomba.calcular_danio(), 30) #la bomba normal hace 30 de daño
+
+    def test_estado_bomba_no_explota_antes_de_tiempo(self):
+        """Verifica que la bomba no explote antes de su tiempo de explosion"""
+        self.assertFalse(self.bomba.estado_bomba(2000)) #la bomba no tendria que explotar debido a que su tiempo de explosion es de 3000ms y solo pasaron 2000ms
+
+    def test_estado_bomba_explota_despues_de_tiempo(self):
+        """Verifica que la bomba explote despues de su tiempo de explosion"""
+        self.assertTrue(self.bomba.estado_bomba(4000))  #la bomba tendria que explotar debido a que pasaron 3000ms de ser colocada
