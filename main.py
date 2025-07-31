@@ -4,17 +4,17 @@ import random
 import os 
 
 
-from Modelos.Jugador import Jugador
-from Modelos.Enemigo import Enemigo
-from Modelos.Mapa import Mapa
+from modelos.Jugador import Jugador
+from modelos.Enemigo import Enemigo
+from modelos.Mapa import Mapa
 
 
-from Vista.JugadorGrafico import JugadorGrafico 
-from Vista.EnemigoGrafico import EnemigoGrafico
-from Vista.MapaGrafico import MapaGrafico
+from vista.JugadorGrafico import JugadorGrafico 
+from vista.EnemigoGrafico import EnemigoGrafico
+from vista.MapaGrafico import MapaGrafico
 
 
-from Controlador.Controlador import Controlador
+from controlador.Controlador import Controlador
 
 
 TAMANO_CELDA = 40 #El valor puesto aca puede ser cambiado a 30 para obtener la experiencia que fue presentada en la ultima clase

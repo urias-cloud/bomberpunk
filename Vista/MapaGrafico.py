@@ -24,6 +24,7 @@ class MapaGrafico:
 
         self.inicializar_paredes_graficas()
     def inicializar_paredes_graficas(self):
+        """Metodo que inicializa las paredes"""
         for pared_logica in self.modelo.paredes_logicas:
             self.paredes_graficas.append(ParedGrafica(
                 pared_logica.pos_x,
@@ -42,6 +43,7 @@ class MapaGrafico:
                       
                        
     def dibujar(self, pantalla):
+        """Metodo para dibujar el piso y las paredes"""
         if self.imagen_piso:
             pantalla.blit(self.imagen_piso, (0, 0))  # Dibuja el fondo completo
 

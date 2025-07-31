@@ -1,12 +1,13 @@
 import pygame
 import os 
 from .PersonajeGrafico import PersonajeGrafico
-from Modelos.animacion import Animacion
+from modelos.animacion import Animacion
 
 class JugadorGrafico(PersonajeGrafico):
     """Clase para representar gráficamente al jugador con animaciones."""
 
     def __init__(self, modelo, tamano_celda):
+        """Metodo constructor"""
         # Rutas a spritesheets de animaciones
         ruta_idle = os.path.join("assets", "player-idle.png")
         ruta_run = os.path.join("assets", "player-run.png")

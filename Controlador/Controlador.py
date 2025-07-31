@@ -1,8 +1,8 @@
 import pygame
 import sys
 import random
-from Modelos.Bomba import Bomba
-from Vista.BombaGrafica import BombaGrafica
+from modelos.Bomba import Bomba
+from vista.BombaGrafica import BombaGrafica
 
 
 
